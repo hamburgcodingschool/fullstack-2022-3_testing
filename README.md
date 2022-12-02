@@ -18,6 +18,7 @@ Saturday, 3rd 2023
 
 Sunday, 4th 2023
 ### Block 3 (Morning) - Mocking
+- Repetition of yesterday's topics / your questions
 - What is mocking?
 - When is code testable / need to refactor
 - Writing a mock for user-input
