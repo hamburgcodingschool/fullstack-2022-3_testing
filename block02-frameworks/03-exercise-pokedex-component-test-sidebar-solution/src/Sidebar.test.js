@@ -12,7 +12,11 @@ test('a menu from the given object', async () => {
   ];
 
   const { container } = render(<Sidebar menu={menu} />);
-  container.querySelectorAll('li').forEach((li, index) => {
+  const menuItems = container.querySelectorAll('li');
+
+  expect(menuItems.length).toEqual(menu.length);
+  
+  menuItems.forEach((li, index) => {
     expect(li).toHaveTextContent(menu[index].text);
   });
 });
